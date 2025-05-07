@@ -25,7 +25,7 @@ import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 
 // Images
-import profilePicture from "assets/images/bruce-mars.jpg";
+import profilePicture from "assets/images/author.jpeg";
 
 function Profile() {
   return (
@@ -38,23 +38,32 @@ function Profile() {
           <Grid container justifyContent="center" py={6}>
             <Grid item xs={12} md={7} mx={{ xs: "auto", sm: 6, md: 1 }}>
               <MKBox display="flex" justifyContent="space-between" alignItems="center" mb={1}>
-                <MKTypography variant="h3">Michael Roven</MKTypography>
-                <MKButton variant="outlined" color="info" size="small">
+                <MKTypography variant="h3">
+                  <span>Stanley Owen</span>
+                  <span
+                    style={{
+                      // light gray
+                      color: "#B0BEC5",
+                    }}
+                  >
+                    {" "}
+                    張銘元
+                  </span>
+                </MKTypography>
+                <MKButton
+                  variant="outlined"
+                  color="info"
+                  size="small"
+                  href="https://github.com/stanleyowen"
+                  target="_blank"
+                >
                   Follow
                 </MKButton>
               </MKBox>
               <Grid container spacing={3} mb={3}>
                 <Grid item>
                   <MKTypography component="span" variant="body2" fontWeight="bold">
-                    323&nbsp;
-                  </MKTypography>
-                  <MKTypography component="span" variant="body2" color="text">
-                    Posts
-                  </MKTypography>
-                </Grid>
-                <Grid item>
-                  <MKTypography component="span" variant="body2" fontWeight="bold">
-                    3.5k&nbsp;
+                    26&nbsp;
                   </MKTypography>
                   <MKTypography component="span" variant="body2" color="text">
                     Followers
@@ -62,7 +71,7 @@ function Profile() {
                 </Grid>
                 <Grid item>
                   <MKTypography component="span" variant="body2" fontWeight="bold">
-                    260&nbsp;
+                    11&nbsp;
                   </MKTypography>
                   <MKTypography component="span" variant="body2" color="text">
                     Following
@@ -70,12 +79,17 @@ function Profile() {
                 </Grid>
               </Grid>
               <MKTypography variant="body1" fontWeight="light" color="text">
-                Decisions: If you can&apos;t decide, the answer is no. If two equally difficult
-                paths, choose the one more painful in the short term (pain avoidance is creating an
-                illusion of equality). Choose the path that leaves you more equanimous. <br />
+                I'm Stanley Owen, 張銘元, from Indonesia, a highly ambitious and self-motivated
+                software developers with a passion for technology and innovation. Currently pursuing
+                a Bachelor of Computer Science at National Taiwan University of Science and
+                Technology. This website is a school project for my Traditional Chinese Medicine
+                course, where I combine my knowledge of technology and traditional Chinese medicine.
+                Any feedback or questions? Feel free to reach out!
+                <br />
                 <MKTypography
                   component="a"
-                  href="#"
+                  href="https://github.com/stanleyowen"
+                  target="_blank"
                   variant="body1"
                   fontWeight="light"
                   color="info"

@@ -16,6 +16,7 @@ Coded by www.creative-tim.com
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
+import { useState } from "react";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
@@ -27,6 +28,19 @@ import MKTypography from "components/MKTypography";
 import bgImage from "assets/images/examples/blog2.jpg";
 
 function Contact() {
+  const [isClicked, setClicked] = useState(false);
+
+  const handleClick = () => {
+    setClicked(!isClicked);
+
+    if (!isClicked) {
+      alert(
+        "Since this website is built within 1 month, the backend is not yet completed :( Hopefully I can finish it in the future :)"
+      );
+      setClicked(false);
+    }
+  };
+
   return (
     <MKBox component="section" py={{ xs: 0, lg: 6 }}>
       <Container>
@@ -70,23 +84,9 @@ function Contact() {
                       Contact Information
                     </MKTypography>
                     <MKTypography variant="body2" color="white" opacity={0.8} mb={3}>
-                      Fill up the form and our Team will get back to you within 24 hours.
+                      Fill in the form to get in touch with me. I will get back to you as soon as
+                      possible :D
                     </MKTypography>
-                    <MKBox display="flex" p={1}>
-                      <MKTypography variant="button" color="white">
-                        <i className="fas fa-phone" />
-                      </MKTypography>
-                      <MKTypography
-                        component="span"
-                        variant="button"
-                        color="white"
-                        opacity={0.8}
-                        ml={2}
-                        fontWeight="regular"
-                      >
-                        (+40) 772 100 200
-                      </MKTypography>
-                    </MKBox>
                     <MKBox display="flex" color="white" p={1}>
                       <MKTypography variant="button" color="white">
                         <i className="fas fa-envelope" />
@@ -99,7 +99,7 @@ function Contact() {
                         ml={2}
                         fontWeight="regular"
                       >
-                        hello@creative-tim.com
+                        b11315015@mail.ntust.edu.tw
                       </MKTypography>
                     </MKBox>
                     <MKBox display="flex" color="white" p={1}>
@@ -114,21 +114,41 @@ function Contact() {
                         ml={2}
                         fontWeight="regular"
                       >
-                        Dyonisie Wolf Bucharest, RO 010458
+                        National Taiwan University of Science and Technology, Taipei, Taiwan
                       </MKTypography>
                     </MKBox>
                     <MKBox mt={3}>
-                      <MKButton variant="text" color="white" size="large" iconOnly>
-                        <i className="fab fa-facebook" style={{ fontSize: "1.25rem" }} />
+                      <MKButton
+                        variant="text"
+                        color="white"
+                        size="large"
+                        iconOnly
+                        href="mailto:b11315015@mail.ntust.edu.tw"
+                        target="_blank"
+                      >
+                        <i className="far fa-envelope" style={{ fontSize: "1.25rem" }} />
                       </MKButton>
-                      <MKButton variant="text" color="white" size="large" iconOnly>
-                        <i className="fab fa-twitter" style={{ fontSize: "1.25rem" }} />
-                      </MKButton>
-                      <MKButton variant="text" color="white" size="large" iconOnly>
-                        <i className="fab fa-dribbble" style={{ fontSize: "1.25rem" }} />
-                      </MKButton>
-                      <MKButton variant="text" color="white" size="large" iconOnly>
+                      <MKButton
+                        variant="text"
+                        color="white"
+                        size="large"
+                        iconOnly
+                        href="
+                        https://www.instagram.com/stanleyowennn/"
+                        target="_blank"
+                      >
                         <i className="fab fa-instagram" style={{ fontSize: "1.25rem" }} />
+                      </MKButton>
+                      <MKButton
+                        variant="text"
+                        color="white"
+                        size="large"
+                        iconOnly
+                        href="
+                        https://github.com/stanleyowen"
+                        target="_blank"
+                      >
+                        <i className="fab fa-github" style={{ fontSize: "1.25rem" }} />
                       </MKButton>
                     </MKBox>
                   </MKBox>
@@ -138,10 +158,10 @@ function Contact() {
                 <MKBox component="form" p={2} method="post">
                   <MKBox px={3} py={{ xs: 2, sm: 6 }}>
                     <MKTypography variant="h2" mb={1}>
-                      Say Hi!
+                      Say Hi 👋
                     </MKTypography>
                     <MKTypography variant="body1" color="text" mb={2}>
-                      We&apos;d like to talk with you.
+                      Feel free to drop any message or question!
                     </MKTypography>
                   </MKBox>
                   <MKBox pt={0.5} pb={3} px={3}>
@@ -185,7 +205,12 @@ function Contact() {
                       textAlign="right"
                       ml="auto"
                     >
-                      <MKButton variant="gradient" color="info">
+                      <MKButton
+                        variant="gradient"
+                        color="info"
+                        onClick={handleClick}
+                        disabled={isClicked}
+                      >
                         Send Message
                       </MKButton>
                     </Grid>
