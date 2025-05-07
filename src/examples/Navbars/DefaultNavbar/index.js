@@ -551,7 +551,7 @@ function DefaultNavbar({ brand, routes, transparent, light, action, sticky, rela
 
 // Setting default values for the props of DefaultNavbar
 DefaultNavbar.defaultProps = {
-  brand: "Material Kit 2",
+  brand: "Traditional Chinese Medicine",
   transparent: false,
   light: false,
   action: false,

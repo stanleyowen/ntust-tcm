@@ -82,8 +82,9 @@ function Presentation() {
                   fontSize: size["3xl"],
                 },
               })}
+              style={{ backgroundColor: "rgba(0, 0, 0, 0.5)", textAlign: "center" }}
             >
-              Material Kit 2 React{" "}
+              Introduction to Traditional Chinese Medicine
             </MKTypography>
             <MKTypography
               variant="body1"
@@ -91,9 +92,10 @@ function Presentation() {
               textAlign="center"
               px={{ xs: 6, lg: 12 }}
               mt={1}
+              style={{ backgroundColor: "rgba(0, 0, 0, 0.5)", textAlign: "center" }}
             >
-              Free & Open Source Web UI Kit built over ReactJS &amp; MUI. Join over 1.6 million
-              developers around the world.
+              Presenting a world of ancient wisdom and holistic healing, where the balance of mind,
+              body, and spirit converge.
             </MKTypography>
           </Grid>
         </Container>
