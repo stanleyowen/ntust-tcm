@@ -38,7 +38,7 @@ import routes from "routes";
 import footerRoutes from "footer.routes";
 
 // Images
-import bgImage from "assets/images/bg-about-us.jpg";
+import bgImage from "assets/images/bg-history.jpg";
 
 function AboutUs() {
   return (
@@ -89,32 +89,13 @@ function AboutUs() {
                 },
               })}
             >
-              Work with an amazing design
+              History of Traditional Chinese Medicine
             </MKTypography>
             <MKTypography variant="body1" color="white" opacity={0.8} mt={1} mb={3}>
-              We&apos;re constantly trying to express ourselves and actualize our dreams. If you
-              have the opportunity to play this game
+              The history of Chinese medicine is a rich tapestry woven with myth, legend, and
+              historical figures. It spans thousands of years, evolving from ancient practices to
+              modern interpretations.
             </MKTypography>
-            <MKButton color="default" sx={{ color: ({ palette: { dark } }) => dark.main }}>
-              create account
-            </MKButton>
-            <MKTypography variant="h6" color="white" mt={8} mb={1}>
-              Find us on
-            </MKTypography>
-            <MKBox display="flex" justifyContent="center" alignItems="center">
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-facebook" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-instagram" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#" mr={3}>
-                <i className="fab fa-twitter" />
-              </MKTypography>
-              <MKTypography component="a" variant="body1" color="white" href="#">
-                <i className="fab fa-google-plus" />
-              </MKTypography>
-            </MKBox>
           </Grid>
         </Container>
       </MKBox>
