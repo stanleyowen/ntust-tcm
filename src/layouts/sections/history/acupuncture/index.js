@@ -18,6 +18,7 @@ import BaseLayout from "layouts/sections/components/BaseLayout";
 
 // @mui material components
 import Grid from "@mui/material/Grid";
+import Container from "@mui/material/Container";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
@@ -97,7 +98,7 @@ function Features() {
             emerged.
           </MKTypography>
 
-          <MKTypography variant="body2" color="text" sx={{ textAlign: "justify" }}>
+          <MKTypography variant="body2" color="text" sx={{ textAlign: "justify" }} mb={3}>
             While the use of metal needles and moxibustion remains the most common technical
             approach, modern innovations have introduced electricity and lasers as alternatives to
             handheld needles in certain circumstances. Despite these advancements, acupuncture
@@ -105,6 +106,53 @@ function Features() {
             discoveries of ancient humans.
           </MKTypography>
         </Grid>
+
+        <MKBox
+          component="section"
+          variant="gradient"
+          bgColor="dark"
+          position="relative"
+          py={6}
+          px={{ xs: 2, lg: 0 }}
+          mx={-2}
+        >
+          <Container>
+            <Grid container>
+              <MKTypography variant="h3" color="white">
+                From Stone to Silicon: The Evolution of Acupuncture
+              </MKTypography>
+
+              <MKBox
+                component="img"
+                src="https://www.jrheum.org/content/jrheum/48/6/924/F2.large.jpg"
+                alt="Traditional Chinese Medicine"
+                borderRadius="lg"
+                width="100%"
+                mb={3}
+                mt={3}
+                sx={{ maxHeight: "400px", objectFit: "cover" }}
+              />
+
+              <MKTypography variant="body2" color="white" opacity={0.8} mt={3} textAlign="justify">
+                Just as ancient humans used sharp stones to relieve pain and promote healing, modern
+                science and technology have introduced new ways to understand and apply acupuncture.
+                Today, researchers use neuroimaging technologies like fMRI and PET scans to study
+                how acupuncture affects the brain and nervous system. These tools provide evidence
+                for acupuncture’s effects on pain pathways, emotion regulation, and organ function.
+                In addition, artificial intelligence (AI) is being used to analyze vast databases of
+                acupuncture cases and outcomes, helping to identify the most effective point
+                combinations for specific conditions. Robotic acupuncture systems, guided by AI and
+                real-time imaging, are also being developed to deliver precise needle placement with
+                minimal discomfort. Furthermore, electroacupuncture and laser acupuncture offer
+                needle-free alternatives that simulate traditional acupuncture using electrical or
+                light energy—making treatments more accessible, especially for needle-sensitive
+                patients. Just as early humans used the tools they had to explore healing, we now
+                use technology to refine, validate, and expand these ancient practices for a modern
+                world.
+              </MKTypography>
+            </Grid>
+          </Container>
+        </MKBox>
       </MKBox>
     </BaseLayout>
   );

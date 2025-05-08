@@ -18,13 +18,11 @@ import BaseLayout from "layouts/sections/components/BaseLayout";
 
 // @mui material components
 import Grid from "@mui/material/Grid";
+import Container from "@mui/material/Container";
 
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-
-// Material Kit 2 React examples
-import AcupuntureImage from "assets/images/acupunture.png";
 
 function Features() {
   return (
@@ -90,7 +88,7 @@ function Features() {
             but also to prevent illnesses by strengthening the body's resistance to disease.
           </MKTypography>
 
-          <MKTypography variant="body2" color="text" sx={{ textAlign: "justify" }}>
+          <MKTypography variant="body2" color="text" sx={{ textAlign: "justify" }} mb={6}>
             The discovery of fire and its application in therapeutic practices like moxibustion
             marked the beginning of a systematic approach to healing. It demonstrated an early
             understanding of the connection between external stimuli and internal health, paving the
@@ -101,6 +99,79 @@ function Features() {
             properties.
           </MKTypography>
         </Grid>
+      </MKBox>
+
+      <MKBox
+        component="section"
+        variant="gradient"
+        bgColor="dark"
+        position="relative"
+        py={6}
+        px={{ xs: 2, lg: 0 }}
+        mx={-2}
+      >
+        <Container>
+          <Grid container>
+            <MKTypography variant="h3" color="white">
+              From Fire to Smart Devices: The Evolution of Moxibustion
+            </MKTypography>
+            <MKTypography variant="body2" color="white" opacity={0.8} mt={3} textAlign="justify">
+              Just as the discovery of fire was a turning point in human history—helping early
+              humans stay warm, cook food, and eventually discover the healing power of heat—the
+              development of modern technology has brought about a new kind of transformation in
+              medicine. In ancient times, people noticed that applying heat to the body could
+              relieve pain and help with healing. This led to early techniques like moxibustion,
+              where burning dried herbs (usually mugwort) near the skin helped improve circulation
+              and restore balance in the body. That discovery came from closely observing nature and
+              experimenting with simple tools—just like how people today use computers and machines
+              to solve complex problems.
+            </MKTypography>
+
+            <MKTypography variant="body2" color="white" opacity={0.8} mt={3} textAlign="justify">
+              Now, in the same way that fire changed how people lived and healed, the rise of
+              electricity, computers, and artificial intelligence (AI) is changing how we understand
+              and improve traditional practices like moxibustion. Scientists and doctors can now use
+              tools like thermal cameras to study how heat affects the body during moxibustion. They
+              can collect data and use AI programs to find patterns in how patients respond to
+              different treatments. This helps create better, more personalized treatment plans.
+              There are even smart moxibustion devices and apps that guide people on where and how
+              to apply heat based on traditional Chinese medicine principles and modern medical
+              data.
+            </MKTypography>
+
+            <MKBox
+              component="img"
+              src="https://www.jrheum.org/content/jrheum/48/6/924/F2.large.jpg"
+              alt="Traditional Chinese Medicine"
+              borderRadius="lg"
+              width="100%"
+              mb={3}
+              mt={3}
+              sx={{ maxHeight: "400px", objectFit: "cover" }}
+            />
+
+            <MKTypography variant="body2" color="white" opacity={0.8} mt={3} textAlign="justify">
+              Additionally, modern advancements have led to the development of innovative
+              moxibustion techniques such as microwave moxibustion, laser moxibustion, and
+              electrothermal moxibustion. These methods simulate the traditional effects of
+              moxibustion using physical or chemical processes. For example, microwave moxibustion
+              uses microwaves to generate heat, while laser moxibustion uses concentrated light
+              energy to stimulate acupuncture points, and electrothermal moxibustion uses electrical
+              currents to achieve similar therapeutic effects. These modern techniques provide new
+              ways to apply the healing power of heat with greater precision and less discomfort,
+              offering patients a more comfortable and effective alternative to traditional
+              moxibustion.
+            </MKTypography>
+
+            <MKTypography variant="body2" color="white" opacity={0.8} mt={3} textAlign="justify">
+              So, while fire was the first technology that helped people heal using heat, today's
+              technology—powered by electricity and guided by computer science—is continuing that
+              journey. Both moments in history show how human creativity and curiosity lead to new
+              ways of caring for health. One used flames; the other uses information. But in the
+              end, both help people live healthier, more balanced lives.
+            </MKTypography>
+          </Grid>
+        </Container>
       </MKBox>
     </BaseLayout>
   );
