@@ -24,6 +24,8 @@ import Container from "@mui/material/Container";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
+import Chip from "assets/images/chip.webp";
+
 function Features() {
   return (
     <BaseLayout
@@ -191,36 +193,32 @@ function Features() {
           <Container>
             <Grid container>
               <MKTypography variant="h3" color="white">
-                From Stone to Silicon: The Evolution of Acupuncture
+                Needles and Circuits: A Journey Through Time
               </MKTypography>
 
               <MKBox
                 component="img"
-                src="https://www.jrheum.org/content/jrheum/48/6/924/F2.large.jpg"
+                src={Chip}
                 alt="Traditional Chinese Medicine"
                 borderRadius="lg"
                 width="100%"
-                mb={3}
                 mt={3}
-                sx={{ maxHeight: "400px", objectFit: "cover" }}
+                sx={{ objectFit: "cover" }}
               />
 
               <MKTypography variant="body2" color="white" opacity={0.8} mt={3} textAlign="justify">
-                Just as ancient humans used sharp stones to relieve pain and promote healing, modern
-                science and technology have introduced new ways to understand and apply acupuncture.
-                Today, researchers use neuroimaging technologies like fMRI and PET scans to study
-                how acupuncture affects the brain and nervous system. These tools provide evidence
-                for acupuncture’s effects on pain pathways, emotion regulation, and organ function.
-                In addition, artificial intelligence (AI) is being used to analyze vast databases of
-                acupuncture cases and outcomes, helping to identify the most effective point
-                combinations for specific conditions. Robotic acupuncture systems, guided by AI and
-                real-time imaging, are also being developed to deliver precise needle placement with
-                minimal discomfort. Furthermore, electroacupuncture and laser acupuncture offer
-                needle-free alternatives that simulate traditional acupuncture using electrical or
-                light energy—making treatments more accessible, especially for needle-sensitive
-                patients. Just as early humans used the tools they had to explore healing, we now
-                use technology to refine, validate, and expand these ancient practices for a modern
-                world.
+                Just as the materials and shapes of acupuncture needles have evolved to become
+                finer, more precise, and more effective over time, a similar transformation has
+                occurred in the world of modern technology—especially in integrated circuit (IC)
+                design. In electronics, engineers have worked for decades to make circuits smaller
+                and thinner while increasing their power and efficiency, leading to the powerful yet
+                tiny chips we use today in smartphones and computers. This idea of "doing more with
+                less" parallels the development of acupuncture: from large, rough stone tools to
+                ultra-thin stainless steel needles that can treat the body with minimal discomfort.
+                Both journeys show how advancing material science and precision engineering can
+                enhance performance—whether in healing the human body or powering modern devices.
+                The continued miniaturization of tools in both fields reflects a shared goal: to
+                improve outcomes through precision, innovation, and thoughtful design.
               </MKTypography>
             </Grid>
           </Container>
