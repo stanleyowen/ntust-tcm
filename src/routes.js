@@ -51,9 +51,12 @@ import SignIn from "layouts/pages/authentication/sign-in";
 import Moxibustion from "layouts/sections/history/moxibustion";
 import Acupuncture from "layouts/sections/history/acupuncture";
 import Needle from "layouts/sections/history/needle";
-import Navbars from "layouts/sections/navigation/navbars";
-import NavTabs from "layouts/sections/navigation/nav-tabs";
-import Pagination from "layouts/sections/navigation/pagination";
+import MedicalBooks from "layouts/sections/classics/medical-books";
+import YellowEmperror from "layouts/sections/classics/yellow-emperor";
+import NanChing from "layouts/sections/classics/nan-ching";
+import FebrileDisease from "layouts/sections/classics/feberile-disease";
+import MateriaMedica from "layouts/sections/classics/materia-medica";
+import Pagination from "layouts/sections/classics/pagination";
 import Inputs from "layouts/sections/input-areas/inputs";
 import Forms from "layouts/sections/input-areas/forms";
 import Alerts from "layouts/sections/attention-catchers/alerts";
@@ -134,19 +137,34 @@ const routes = [
         ],
       },
       {
-        name: "navigation",
-        description: "See all navigations",
+        name: "classics",
+        description: "The classics of TCM",
         dropdown: true,
         collapse: [
           {
-            name: "navbars",
-            route: "/sections/navigation/navbars",
-            component: <Navbars />,
+            name: "Medical Books",
+            route: "/sections/classics/medical-books",
+            component: <MedicalBooks />,
           },
           {
-            name: "nav tabs",
-            route: "/sections/navigation/nav-tabs",
-            component: <NavTabs />,
+            name: "the yellow emperor's inner classic",
+            route: "/sections/classics/the-yellow-emperors-inner-classic",
+            component: <YellowEmperror />,
+          },
+          {
+            name: "the classic of nan-ching",
+            route: "/sections/classics/the-classic-of-nan-ching",
+            component: <NanChing />,
+          },
+          {
+            name: "treatise on feberile disease caused by cold",
+            route: "/sections/classics/treatise-on-feberile-disease-caused-by-cold",
+            component: <FebrileDisease />,
+          },
+          {
+            name: "Shennong`s Materia Medica",
+            route: "/sections/classics/shennongs-materia-medica",
+            component: <MateriaMedica />,
           },
           {
             name: "pagination",
