@@ -28,16 +28,19 @@ import MKTypography from "components/MKTypography";
 import bgImage from "assets/images/examples/blog2.jpg";
 
 function Contact() {
-  const [isClicked, setClicked] = useState(false);
+  const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = () => {
-    setClicked(!isClicked);
-
     if (!isClicked) {
+      setIsClicked(true);
+
       alert(
-        "Since this website is built within 1 month, the backend is not yet completed :( Hopefully I can finish it in the future :)"
+        "Since this website is built within 2.5 month, the backend is not yet completed :( Hopefully I can finish it in the future :)"
       );
-      setClicked(false);
+
+      setTimeout(() => {
+        setIsClicked(false);
+      }, 3000);
     }
   };
 

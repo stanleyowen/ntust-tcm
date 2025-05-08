@@ -15,6 +15,7 @@ Coded by www.creative-tim.com
 */
 
 // @mui material components
+import { useState } from "react";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
 
@@ -25,25 +26,47 @@ import MKInput from "components/MKInput";
 import MKButton from "components/MKButton";
 
 // Images
-import macbook from "assets/images/macbook.png";
+import getInTouch from "assets/images/get-in-touch.png";
 
 function Newsletter() {
+  const [isClicked, setIsClicked] = useState(false);
+
+  const handleClick = () => {
+    if (!isClicked) {
+      setIsClicked(true);
+
+      alert(
+        "Since this website is built within 2.5 month, the backend is not yet completed :( Hopefully I can finish it in the future :)"
+      );
+
+      setTimeout(() => {
+        setIsClicked(false);
+      }, 3000);
+    }
+  };
+
   return (
     <MKBox component="section" pt={6} my={6}>
       <Container>
         <Grid container alignItems="center">
           <Grid item sx={12} md={6}>
-            <MKTypography variant="h4">Be the first to see the news</MKTypography>
+            <MKTypography variant="h4">Be the first to know</MKTypography>
             <MKTypography variant="body2" color="text" mb={3}>
-              Your company may not be in the software business, but eventually, a software company
-              will be in your business.
+              Subscribe to our newsletter and get the latest updates if you want to be the first to
+              know ¯\_(ツ)_/¯
             </MKTypography>
             <Grid container spacing={1}>
               <Grid item xs={8}>
                 <MKInput type="email" label="Email Here..." fullWidth />
               </Grid>
               <Grid item xs={4}>
-                <MKButton variant="gradient" color="info" sx={{ height: "100%" }}>
+                <MKButton
+                  variant="gradient"
+                  color="info"
+                  sx={{ height: "100%" }}
+                  onClick={handleClick}
+                  disabled={isClicked}
+                >
                   Subscribe
                 </MKButton>
               </Grid>
@@ -51,7 +74,7 @@ function Newsletter() {
           </Grid>
           <Grid item xs={12} md={5} sx={{ ml: "auto" }}>
             <MKBox position="relative">
-              <MKBox component="img" src={macbook} alt="macbook" width="100%" />
+              <MKBox component="img" src={getInTouch} alt="Get In Touch" width="100%" />
             </MKBox>
           </Grid>
         </Grid>
