@@ -18,10 +18,10 @@ import BaseLayout from "layouts/sections/components/BaseLayout";
 import View from "layouts/sections/components/View";
 
 // PageHeaders page components
-import HeaderOne from "layouts/sections/page-sections/page-headers/components/HeaderOne";
+import HeaderOne from "layouts/sections/history/moxibustion/components/HeaderOne";
 
 // PageHeaders page components code
-import headerOneCode from "layouts/sections/page-sections/page-headers/components/HeaderOne/code";
+import headerOneCode from "layouts/sections/history/moxibustion/components/HeaderOne/code";
 
 function PageHeaders() {
   return (

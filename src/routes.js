@@ -48,8 +48,8 @@ import Author from "layouts/pages/landing-pages/author";
 import SignIn from "layouts/pages/authentication/sign-in";
 
 // Sections
-import PageHeaders from "layouts/sections/page-sections/page-headers";
-import Features from "layouts/sections/page-sections/featuers";
+import Moxibustion from "layouts/sections/history/moxibustion";
+import Acupuncture from "layouts/sections/history/acupuncture";
 import Navbars from "layouts/sections/navigation/navbars";
 import NavTabs from "layouts/sections/navigation/nav-tabs";
 import Pagination from "layouts/sections/navigation/pagination";
@@ -78,8 +78,8 @@ const routes = [
         name: "landing pages",
         collapse: [
           {
-            name: "about us",
-            route: "/pages/landing-pages/about-us",
+            name: "history of TCM",
+            route: "/pages/landing-pages/history",
             component: <AboutUs />,
           },
           {
@@ -111,19 +111,19 @@ const routes = [
     icon: <Icon>view_day</Icon>,
     collapse: [
       {
-        name: "page sections",
-        description: "See all sections",
+        name: "history",
+        description: "See all history",
         dropdown: true,
         collapse: [
           {
-            name: "page headers",
-            route: "/sections/page-sections/page-headers",
-            component: <PageHeaders />,
+            name: "the origin of moxibustion",
+            route: "/sections/history/moxibustion",
+            component: <Moxibustion />,
           },
           {
-            name: "features",
-            route: "/sections/page-sections/features",
-            component: <Features />,
+            name: "the discovery of acupuncture",
+            route: "/sections/history/acupuncture",
+            component: <Acupuncture />,
           },
         ],
       },
