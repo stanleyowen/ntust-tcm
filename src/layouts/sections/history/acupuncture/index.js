@@ -26,10 +26,10 @@ import featuresOneCode from "layouts/sections/history/acupuncture/components/Fea
 function Features() {
   return (
     <BaseLayout
-      title="Features"
+      title="Acupuncture"
       breadcrumb={[
-        { label: "Page Sections", route: "/sections/page-sections/features" },
-        { label: "Features" },
+        { label: "History", route: "/pages/landing-pages/history" },
+        { label: "Acupuncture" },
       ]}
     >
       <View title="Features 1" code={featuresOneCode}>
