@@ -50,6 +50,7 @@ import SignIn from "layouts/pages/authentication/sign-in";
 // Sections
 import Moxibustion from "layouts/sections/history/moxibustion";
 import Acupuncture from "layouts/sections/history/acupuncture";
+import Needle from "layouts/sections/history/needle";
 import Navbars from "layouts/sections/navigation/navbars";
 import NavTabs from "layouts/sections/navigation/nav-tabs";
 import Pagination from "layouts/sections/navigation/pagination";
@@ -124,6 +125,11 @@ const routes = [
             name: "the discovery of acupuncture",
             route: "/sections/history/acupuncture",
             component: <Acupuncture />,
+          },
+          {
+            name: "the history of needle materials",
+            route: "/sections/history/needles",
+            component: <Needle />,
           },
         ],
       },
