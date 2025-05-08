@@ -21,10 +21,10 @@ import BaseLayout from "layouts/sections/components/BaseLayout";
 import View from "layouts/sections/components/View";
 
 // Stats page components
-import PaginationSimple from "layouts/sections/navigation/pagination/components/PaginationSimple";
+import PaginationSimple from "layouts/sections/classics/pagination/components/PaginationSimple";
 
 // Stats page components code
-import paginationSimpleCode from "layouts/sections/navigation/pagination/components/PaginationSimple/code";
+import paginationSimpleCode from "layouts/sections/classics/pagination/components/PaginationSimple/code";
 
 function Pagination() {
   return (
