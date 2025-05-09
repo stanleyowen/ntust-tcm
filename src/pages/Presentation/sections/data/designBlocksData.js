@@ -4,7 +4,8 @@ const imagesPrefix =
 export default [
   {
     title: "History of Traditional Chinese Medicine",
-    description: "",
+    description:
+      "Explore the fascinating journey of Traditional Chinese Medicine, from its ancient origins to its profound influence on modern healthcare practices.",
     items: [
       {
         image: `${imagesPrefix}/headers.jpg`,
@@ -25,7 +26,8 @@ export default [
   },
   {
     title: "Medical Books",
-    description: "The medical books of TCM",
+    description:
+      "Delve into the wisdom of ancient medical texts that have shaped Traditional Chinese Medicine for centuries, offering insights into holistic healing and natural remedies.",
     items: [
       {
         image: `${imagesPrefix}/navbars.jpg`,
@@ -56,7 +58,8 @@ export default [
   },
   {
     title: "Classics of TCM",
-    description: "The classics of TCM",
+    description:
+      "Uncover the timeless classics of Traditional Chinese Medicine, revealing the secrets of life balance, energy flow, and the art of living in harmony with nature.",
     items: [
       {
         image: `${imagesPrefix}/newsletters.jpg`,

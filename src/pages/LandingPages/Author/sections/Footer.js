@@ -1,29 +1,17 @@
-/*
-=========================================================
-* Material Kit 2 React - v2.1.0
-=========================================================
-
-* Product Page: https://www.creative-tim.com/product/material-kit-react
-* Copyright 2023 Creative Tim (https://www.creative-tim.com)
-
-Coded by www.creative-tim.com
-
- =========================================================
-
-* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-*/
-
 // @mui material components
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Grid";
-import Link from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
+import { Link as ExternalLink } from "@mui/material";
 
 // Material Kit 2 React components
+import { Link } from "react-router-dom";
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
 
 function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <MKBox component="footer" py={6}>
       <Container>
@@ -37,7 +25,7 @@ function Footer() {
             mb={{ xs: 3, lg: 0 }}
           >
             <MKTypography variant="h6" textTransform="uppercase" mb={{ xs: 2, lg: 3 }}>
-              Material Design
+              Traditional Chinese Medicine
             </MKTypography>
             <Stack
               component="ul"
@@ -55,9 +43,7 @@ function Footer() {
                   fontWeight="regular"
                   opacity={0.8}
                   component={Link}
-                  href="https://www.creative-tim.com"
-                  target="_blank"
-                  rel="noreferrer"
+                  to="/"
                 >
                   Home
                 </MKTypography>
@@ -68,11 +54,9 @@ function Footer() {
                   fontWeight="regular"
                   opacity={0.8}
                   component={Link}
-                  href="https://www.creative-tim.com/presentation"
-                  target="_blank"
-                  rel="noreferrer"
+                  to="/pages/landing-pages/history"
                 >
-                  About
+                  History
                 </MKTypography>
               </MKBox>
               <MKBox component="li">
@@ -81,40 +65,26 @@ function Footer() {
                   fontWeight="regular"
                   opacity={0.8}
                   component={Link}
-                  href="https://www.creative-tim.com/blog"
-                  target="_blank"
-                  rel="noreferrer"
+                  to="/sections/medical-books"
                 >
-                  Blog
-                </MKTypography>
-              </MKBox>
-              <MKBox component="li">
-                <MKTypography
-                  variant="button"
-                  fontWeight="regular"
-                  opacity={0.8}
-                  component={Link}
-                  href="https://www.creative-tim.com"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Services
+                  Medical Books
                 </MKTypography>
               </MKBox>
             </Stack>
             <MKTypography variant="button" opacity={0.8}>
-              Copyright © <script>document.write(new Date().getFullYear())</script>2021 Material
-              Design by Creative Tim.
+              Copyright © {year} Traditional Chinese Medicine by Stanley Owen.
             </MKTypography>
           </Grid>
           <Grid item xs={12} lg={6} ml="auto" textAlign={{ xs: "center", lg: "right" }}>
             <MKTypography variant="body1" fontWeight="bold" mb={6} sx={{ fontSize: "1.125rem" }}>
-              The reward for getting on the stage is fame. The price of fame is you can&apos;t get
-              off the stage.
+              治病必求於本
+              <br />
+              To treat disease, we must seek out its root.
             </MKTypography>
+
             <MKTypography
-              component={Link}
-              href="#dribbble"
+              component={ExternalLink}
+              href="mailto:b11315015@mail.ntust.edu.tw"
               target="_blank"
               rel="noreferrer"
               variant="body2"
@@ -122,11 +92,12 @@ function Footer() {
               opacity={0.5}
               mr={3}
             >
-              <i className="fab fa-dribbble" />
+              <i className="far fa-envelope" />
             </MKTypography>
+
             <MKTypography
-              component={Link}
-              href="#twitter"
+              component={ExternalLink}
+              href="https://www.instagram.com/stanleyowennn/"
               target="_blank"
               rel="noreferrer"
               variant="body2"
@@ -134,23 +105,12 @@ function Footer() {
               opacity={0.5}
               mr={3}
             >
-              <i className="fab fa-twitter" />
+              <i className="fab fa-instagram" />
             </MKTypography>
+
             <MKTypography
-              component={Link}
-              href="#pinterest"
-              target="_blank"
-              rel="noreferrer"
-              variant="body2"
-              color="dark"
-              opacity={0.5}
-              mr={3}
-            >
-              <i className="fab fa-pinterest" />
-            </MKTypography>
-            <MKTypography
-              component={Link}
-              href="#github"
+              component={ExternalLink}
+              href="https://github.com/stanleyowen"
               target="_blank"
               rel="noreferrer"
               variant="body2"

@@ -99,7 +99,6 @@ function Presentation() {
         <Counters />
         <Information />
         <DesignBlocks />
-
         <Download />
       </Card>
       <MKBox pt={6} px={1} mt={6}>

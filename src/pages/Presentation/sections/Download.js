@@ -10,10 +10,11 @@ import MKTypography from "components/MKTypography";
 
 // Images
 import bgImage from "assets/images/shapes/waves-white.svg";
+import { Link } from "react-router-dom";
 
 function Download() {
   return (
-    <MKBox component="section" py={{ xs: 0, sm: 12 }}>
+    <MKBox component="section" py={{ xs: 0 }}>
       <MKBox
         variant="gradient"
         bgColor="dark"
@@ -35,25 +36,25 @@ function Download() {
         <Container sx={{ position: "relative", zIndex: 2, py: 12 }}>
           <Grid container item xs={12} md={7} justifyContent="center" mx="auto" textAlign="center">
             <MKTypography variant="h3" color="white">
-              Do you love this awesome
+              Are you fascinated by the world of
             </MKTypography>
             <MKTypography variant="h3" color="white" mb={1}>
-              UI Kit for ReactJS &amp; MUI?
+              Traditional Chinese Medicine?
             </MKTypography>
             <MKTypography variant="body2" color="white" mb={6}>
-              Cause if you do, it can be yours for FREE. Hit the button below to navigate to
-              Creative Tim where you can find the Design System in HTML. Start a new project or give
-              an old Bootstrap project a new look!
+              Dive into the rich history, profound knowledge, and holistic healing practices of TCM.
+              Click the button below to explore our resources and start your journey into the
+              ancient art of Traditional Chinese Medicine today!
             </MKTypography>
             <MKButton
               variant="gradient"
               color="info"
               size="large"
-              component="a"
-              href="https://www.creative-tim.com/product/material-kit-react"
+              component={Link}
+              to="/pages/landing-pages/history"
               sx={{ mb: 2 }}
             >
-              Download Now
+              Explore Now
             </MKButton>
           </Grid>
         </Container>
