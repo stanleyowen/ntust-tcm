@@ -75,122 +75,102 @@ function Navbars() {
               Treatise on feberile disease caused by Cold
             </MKTypography>
 
-            <MKTypography variant="body2" color="text" sx={{ textAlign: "justify" }} mb={3}>
-              The <b>Huangdi Neijing</b>, also known as the <i>Yellow Emperor’s Inner Classic</i>,
-              is one of the most important and oldest books in Chinese medicine. It has been a key
-              source of knowledge for over 2,000 years. Written as a conversation between the
-              legendary Yellow Emperor and his ministers, especially a doctor named Qíbó, the book
-              provides foundational insights into Chinese medicine.
+            <MKTypography variant="h5" mt={3} mb={3}>
+              Introduction
             </MKTypography>
 
             <MKTypography variant="body2" color="text" sx={{ textAlign: "justify" }} mb={3}>
-              The book is divided into two main parts:
+              The Shanghan Lun, also known as the Treatise on Cold Damage, is one of the most
+              important ancient books in Traditional Chinese Medicine (TCM). It was written by Zhang
+              Zhongjing before 220 AD, near the end of the Han dynasty. This work is part of a
+              larger text called the Shanghan Zabing Lun ("Treatise on Cold Damage and Miscellaneous
+              Diseases").
+            </MKTypography>
+
+            <MKTypography variant="body2" color="text" sx={{ textAlign: "justify" }} mb={3}>
+              The Shanghan Lun is one of the oldest complete clinical textbooks in the world. It
+              stands alongside other famous medical works such as the Huangdi Neijing, the Jingui
+              Yaolue, and Wen Bing Xue. It laid the foundation for how Chinese medicine approaches
+              the diagnosis and treatment of illness, especially those caused by external cold.
+            </MKTypography>
+
+            <MKTypography variant="h5" mt={3} mb={3}>
+              Contents
+            </MKTypography>
+
+            <MKTypography variant="body2" color="text" sx={{ textAlign: "justify" }} mb={3}>
+              The Shanghan Lun contains: 398 sections 113 herbal prescriptions. The book is
+              organized according to Six Divisions, which represent the different stages a disease
+              can go through, based on how Yin and Yang interact in the body:
               <Container>
-                <ul>
+                <ol>
                   <li>
-                    Suwen (素問, “Basic Questions”) <br />
-                    This part explains the basic ideas of Chinese medicine, such as how the body
-                    works, how to diagnose illnesses, and how to maintain health. It serves as the
-                    theoretical foundation for traditional Chinese medicine.
+                    Taiyang (太陽, "Greater Yang")
+                    <Container>
+                      <ul>
+                        <li>Early, mild stage.</li>
+                        <li>Symptoms: chills, fever, headache, stiffness.</li>
+                        <li>Treatment: sweating to release the exterior.</li>
+                      </ul>
+                    </Container>
                   </li>
                   <li>
-                    Lingshu (靈樞, “Spiritual Pivot”) <br />
-                    This part focuses on acupuncture and its application in treating illnesses. It
-                    provides detailed guidance on acupuncture techniques and the meridian system,
-                    which are central to traditional Chinese medicine practices.
+                    Yang Ming (Yang Brightness 陽明)
+                    <Container>
+                      <ul>
+                        <li>Severe, internal heat. </li>
+                        <li>
+                          Symptoms: high fever without chills, constipation, abdominal fullness.
+                        </li>
+                        <li>Treatment: clearing heat and purging. </li>
+                      </ul>
+                    </Container>
                   </li>
-                </ul>
+                  <li>
+                    Shao Yang (Lesser Yang 少陽)
+                    <Container>
+                      <ul>
+                        <li>Half exterior, half interior.</li>
+                        <li>Symptoms: alternating chills and fever, chest discomfort.</li>
+                        <li>Treatment: harmonizing.</li>
+                      </ul>
+                    </Container>
+                  </li>
+                  <li>
+                    Tai Yin (Greater Yin 太陰)
+                    <Container>
+                      <ul>
+                        <li>Cold in the interior.</li>
+                        <li>Symptoms: chills, bloating, abdominal pain.</li>
+                        <li>Treatment: warming and supplementing.</li>
+                      </ul>
+                    </Container>
+                  </li>
+                  <li>
+                    Shao Yin (Lesser Yin 少陰)
+                    <Container>
+                      <ul>
+                        <li>Deeper, more deficient stage.</li>
+                        <li>Symptoms: fatigue, cold limbs, diarrhea, anxiety.</li>
+                        <li>Treatment: warming and supporting the body.</li>
+                      </ul>
+                    </Container>
+                  </li>
+                  <li>
+                    Jue Yin (Absolute Yin 厥陰)
+                    <Container>
+                      <ul>
+                        <li>Final or critical stage.</li>
+                        <li>Symptoms: thirst, trouble urinating, physical weakness or collapse.</li>
+                        <li>Treatment: warming and restoring balance.</li>
+                      </ul>
+                    </Container>
+                  </li>
+                </ol>
               </Container>
             </MKTypography>
-
-            <MKTypography variant="h5" mt={6} mb={3}>
-              The Yellow Emperor's Inner Classic{" "}
-            </MKTypography>
           </Grid>
-
-          <MKBox
-            component="img"
-            src="https://media.allure.com/photos/5e909f76e3986e0008731c3b/16:9/w_2240,c_limit/acupuncture.jpg"
-            alt="Traditional Chinese Medicine"
-            borderRadius="lg"
-            width="60%"
-            mb={3}
-            sx={{ maxHeight: "800px", objectFit: "cover", mx: "auto", display: "block" }}
-          />
-
-          <MKTypography variant="body2" color="text" sx={{ textAlign: "justify" }} mb={3}>
-            The Chinese character for "needle" (針) reflects this history, combining the concepts of
-            sharpness and precision. Similarly, the character for "Bain Stone" (砭) represents the
-            early use of stones for medical purposes. These discoveries highlight the ingenuity of
-            ancient humans, who developed techniques to stimulate specific points on the body to
-            restore balance and harmony.
-          </MKTypography>
-
-          <MKTypography variant="body2" color="text" sx={{ textAlign: "justify" }} mb={3}>
-            As technology advanced, the tools used in acupuncture evolved. The stone needles were
-            replaced with bamboo and later with metals, allowing for greater precision and
-            effectiveness. Today, acupuncture is practiced in various styles, including Japanese
-            acupuncture, Korean hand acupuncture, Leamington Five-Elements acupuncture, French
-            energetic acupuncture, and the traditional Chinese TCM style. Specialized approaches,
-            such as hand–foot acupuncture, auricular acupuncture, and scalp acupuncture, have also
-            emerged.
-          </MKTypography>
-
-          <MKTypography variant="body2" color="text" sx={{ textAlign: "justify" }} mb={3}>
-            While the use of metal needles and moxibustion remains the most common technical
-            approach, modern innovations have introduced electricity and lasers as alternatives to
-            handheld needles in certain circumstances. Despite these advancements, acupuncture
-            remains deeply rooted in its historical origins, continuing to honor the practices and
-            discoveries of ancient humans.
-          </MKTypography>
         </Grid>
-
-        <MKBox
-          component="section"
-          variant="gradient"
-          bgColor="dark"
-          position="relative"
-          py={6}
-          px={{ xs: 2, lg: 0 }}
-          mx={-2}
-        >
-          <Container>
-            <Grid container>
-              <MKTypography variant="h3" color="white">
-                From Stone to Silicon: The Evolution of Acupuncture
-              </MKTypography>
-
-              <MKBox
-                component="img"
-                src="https://www.jrheum.org/content/jrheum/48/6/924/F2.large.jpg"
-                alt="Traditional Chinese Medicine"
-                borderRadius="lg"
-                width="100%"
-                mb={3}
-                mt={3}
-                sx={{ maxHeight: "400px", objectFit: "cover" }}
-              />
-
-              <MKTypography variant="body2" color="white" opacity={0.8} mt={3} textAlign="justify">
-                Just as ancient humans used sharp stones to relieve pain and promote healing, modern
-                science and technology have introduced new ways to understand and apply acupuncture.
-                Today, researchers use neuroimaging technologies like fMRI and PET scans to study
-                how acupuncture affects the brain and nervous system. These tools provide evidence
-                for acupuncture’s effects on pain pathways, emotion regulation, and organ function.
-                In addition, artificial intelligence (AI) is being used to analyze vast databases of
-                acupuncture cases and outcomes, helping to identify the most effective point
-                combinations for specific conditions. Robotic acupuncture systems, guided by AI and
-                real-time imaging, are also being developed to deliver precise needle placement with
-                minimal discomfort. Furthermore, electroacupuncture and laser acupuncture offer
-                needle-free alternatives that simulate traditional acupuncture using electrical or
-                light energy—making treatments more accessible, especially for needle-sensitive
-                patients. Just as early humans used the tools they had to explore healing, we now
-                use technology to refine, validate, and expand these ancient practices for a modern
-                world.
-              </MKTypography>
-            </Grid>
-          </Container>
-        </MKBox>
       </MKBox>
     </BaseLayout>
   );
