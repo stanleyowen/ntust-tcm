@@ -10,10 +10,9 @@ import Icon from "@mui/material/Icon";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
+import firstImage from "assets/images/huangdi-neijing.jpg";
 
 function Navbars() {
-  const firstImage =
-    "http://www.atlanticskyacupuncture.com/wp-content/uploads/2014/07/qing-dynasty.jpg";
   const secondImage =
     "https://www.cgu.edu/wp-content/uploads/2014/12/CISAT-traditional-chinese-medicine5.jpg";
   const thirdImage =
