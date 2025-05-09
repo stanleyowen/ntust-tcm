@@ -37,12 +37,7 @@ function Navbars() {
     "https://media.springernature.com/w580h326/nature-cms/uploads/collections/hero_image_of_collection_page-747354b5e519e25b6814a6164198efa8.png";
 
   return (
-    <BaseLayout
-      breadcrumb={[
-        { label: "Classics", route: "/sections/classics/medical-books" },
-        { label: "Medical Books" },
-      ]}
-    >
+    <BaseLayout breadcrumb={[{ label: "Medical Books" }]}>
       <MKBox component="section">
         <Grid container>
           <Grid item>
@@ -141,12 +136,17 @@ function Navbars() {
                 }}
               >
                 <Container>
+                  <MKTypography variant="h4" color="white" mb={1}>
+                    黃帝內經
+                  </MKTypography>
                   <MKTypography variant="h2" color="white" mb={1}>
                     The Yellow Emperor's Inner Classic
                   </MKTypography>
                   <MKTypography variant="body1" color="white" opacity={0.8} mb={2}>
-                    An ancient therapy that involves burning dried mugwort on specific points of the
-                    body to stimulate healing and improve energy flow.
+                    An ancient medical text structured as a dialogue between the Yellow Emperor and
+                    his ministers. It lays the theoretical foundation of TCM, covering topics such
+                    as Yin-Yang, Five Elements, Qi, meridians, and diagnostic methods. It is
+                    considered the cornerstone of Chinese medical philosophy.
                   </MKTypography>
                   <MKTypography
                     component={Link}
@@ -195,12 +195,17 @@ function Navbars() {
                 }}
               >
                 <Container>
+                  <MKTypography variant="h4" color="white" mb={1}>
+                    難經
+                  </MKTypography>
                   <MKTypography variant="h2" color="white" mb={1}>
                     The Classic of Nan-Ching
                   </MKTypography>
                   <MKTypography variant="body1" color="white" opacity={0.8} mb={2}>
-                    A traditional Chinese medicine practice that involves inserting thin needles
-                    into specific points on the body to balance energy and promote healing.
+                    A follow-up to the Neijing, written in a Q&A format to address 81 complex
+                    problems in TCM, especially regarding pulse diagnosis, organ theory, and
+                    meridians. It deepens and clarifies earlier theories, and has had strong
+                    influence, especially in Japanese acupuncture.
                   </MKTypography>
                   <MKTypography
                     component={Link}
@@ -249,12 +254,17 @@ function Navbars() {
                 }}
               >
                 <Container>
+                  <MKTypography variant="h4" color="white" mb={1}>
+                    傷寒論
+                  </MKTypography>
                   <MKTypography variant="h2" color="white" mb={1}>
                     Treatise on feberile disease caused by Cold
                   </MKTypography>
                   <MKTypography variant="body1" color="white" opacity={0.8} mb={2}>
-                    A traditional Chinese medicine practice that involves inserting thin needles
-                    into specific points on the body to balance energy and promote healing.
+                    A clinical guide by Zhang Zhongjing on diagnosing and treating external
+                    infectious diseases (called "cold damage") using herbal formulas. Organized into
+                    the Six Stages of disease progression, it is one of the earliest practical TCM
+                    manuals.
                   </MKTypography>
                   <MKTypography
                     component={Link}
@@ -303,12 +313,16 @@ function Navbars() {
                 }}
               >
                 <Container>
+                  <MKTypography variant="h4" color="white" mb={1}>
+                    神農本草經
+                  </MKTypography>
                   <MKTypography variant="h2" color="white" mb={1}>
                     Shennong's Materia Medica
                   </MKTypography>
                   <MKTypography variant="body1" color="white" opacity={0.8} mb={2}>
-                    A traditional Chinese medicine practice that involves inserting thin needles
-                    into specific points on the body to balance energy and promote healing.
+                    The oldest Chinese pharmacopoeia, attributed to the legendary Shen Nong. It
+                    categorizes 365 herbs and substances into three grades based on safety and
+                    effectiveness, forming the foundation for Chinese herbal medicine.
                   </MKTypography>
                   <MKTypography
                     component={Link}

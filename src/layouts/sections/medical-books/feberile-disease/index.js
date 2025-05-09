@@ -28,7 +28,6 @@ function Navbars() {
   return (
     <BaseLayout
       breadcrumb={[
-        { label: "Classics" },
         { label: "Medical Books", route: "/sections/classics/medical-books" },
         { label: "Treatise on feberile disease caused by Cold" },
       ]}
