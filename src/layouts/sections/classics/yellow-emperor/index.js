@@ -23,14 +23,14 @@ import Container from "@mui/material/Container";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import { height, maxHeight } from "@mui/system";
 
 function Navbars() {
   return (
     <BaseLayout
       breadcrumb={[
-        { label: "Classics", route: "/sections/classics/medical-books" },
-        { label: "Medical Books" },
+        { label: "Classics" },
+        { label: "Medical Books", route: "/sections/classics/medical-books" },
+        { label: "The Yellow Emperor's Inner Classic" },
       ]}
     >
       <MKBox component="section">

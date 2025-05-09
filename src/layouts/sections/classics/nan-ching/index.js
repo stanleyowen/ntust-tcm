@@ -23,14 +23,14 @@ import Container from "@mui/material/Container";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import { height, maxHeight } from "@mui/system";
 
 function Navbars() {
   return (
     <BaseLayout
       breadcrumb={[
-        { label: "Classics", route: "/sections/classics/medical-books" },
-        { label: "Medical Books" },
+        { label: "Classics" },
+        { label: "Medical Books", route: "/sections/classics/medical-books" },
+        { label: "The Classic of Nan-Ching" },
       ]}
     >
       <MKBox component="section">
@@ -42,7 +42,6 @@ function Navbars() {
               alt="The Yellow Emperor's Inner Classic"
               borderRadius="lg"
               width="25%"
-              mb={3}
               sx={{ objectFit: "cover", maxHeight: "450px" }}
             />
             <MKBox
@@ -51,7 +50,6 @@ function Navbars() {
               alt="The Classic of Nan-Ching"
               borderRadius="lg"
               width="25%"
-              mb={3}
               sx={{ objectFit: "cover", maxHeight: "450px" }}
             />
             <MKBox
@@ -60,7 +58,6 @@ function Navbars() {
               alt="Treatise on feberile disease caused by Cold"
               borderRadius="lg"
               width="25%"
-              mb={3}
               sx={{ objectFit: "cover", maxHeight: "450px" }}
             />
             <MKBox
@@ -69,13 +66,12 @@ function Navbars() {
               alt="Shennong`s Materia Medica"
               borderRadius="lg"
               width="25%"
-              mb={3}
               sx={{ objectFit: "cover", maxHeight: "450px" }}
             />
           </Grid>
 
           <Grid item>
-            <MKTypography variant="h3" mt={6} mb={3}>
+            <MKTypography variant="h3" mt={3} mb={3}>
               The Classic of Nan-Ching
             </MKTypography>
 

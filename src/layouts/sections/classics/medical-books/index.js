@@ -25,7 +25,6 @@ import Icon from "@mui/material/Icon";
 // Material Kit 2 React components
 import MKBox from "components/MKBox";
 import MKTypography from "components/MKTypography";
-import { height, maxHeight } from "@mui/system";
 
 function Navbars() {
   const firstImage =
