@@ -10,7 +10,7 @@ import MKButton from "components/MKButton";
 import MKTypography from "components/MKTypography";
 
 // Images
-import bgImage from "assets/images/examples/blog2.jpg";
+import bgImage from "assets/images/cardImage.jpg";
 
 function Contact() {
   const [isClicked, setIsClicked] = useState(false);
