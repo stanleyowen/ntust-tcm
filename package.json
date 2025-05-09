@@ -1,16 +1,16 @@
 {
-  "name": "material-kit-2-react",
-  "version": "2.1.0",
+  "name": "traditional-chinese-medicine",
+  "version": "1.0.0",
   "private": true,
-  "author": "Creative Tim",
-  "license": "See license in https://www.creative-tim.com/license",
-  "description": "React version of Material Kit 2 by Creative Tim",
+  "author": "Stanley Owen",
+  "license": "MIT",
+  "description": "Traditional Chinese Medicine Application",
   "bugs": {
-    "url": "https://github.com/creativetimofficial/ct-material-kit-react/issues"
+    "url": "https://github.com/stanleyowen/ntust-tcm/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/creativetimofficial/ct-material-kit-react.git"
+    "url": "git+https://github.com/stanleyowen/ntust-tcm.git"
   },
   "dependencies": {
     "@emotion/cache": "11.10.7",

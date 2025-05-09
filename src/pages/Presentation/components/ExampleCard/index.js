@@ -58,7 +58,11 @@ function ExampleCard({ image, name, count, pro, ...rest }) {
         src={image}
         alt={name}
         width="100%"
+        height="200px" // Set a fixed height for all images
         my="auto"
+        sx={{
+          objectFit: "cover", // Ensures the image fills the container while maintaining its aspect ratio
+        }}
         opacity={pro ? 0.6 : 1}
       />
     </MKBox>
