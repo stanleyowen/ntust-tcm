@@ -13,6 +13,51 @@ import MKTypography from "components/MKTypography";
 import profilePicture from "assets/images/author.jpeg";
 
 function Profile() {
+  const references = [
+    {
+      citation:
+        "“Traditional Chinese Medicine.” Britannica, www.britannica.com/science/traditional-Chinese-medicine.",
+      link: "https://www.britannica.com/science/traditional-Chinese-medicine",
+    },
+    {
+      citation:
+        "“The Development of Traditional Chinese Medicine.” ScienceDirect, www.sciencedirect.com/science/article/pii/S2095754821000909.",
+      link: "https://www.sciencedirect.com/science/article/pii/S2095754821000909",
+    },
+    {
+      citation:
+        "“Understanding Traditional Chinese Medicine Therapeutics: An Overview of the Basics and Clinical Applications.” PubMed Central, pmc.ncbi.nlm.nih.gov/articles/PMC8000828/.",
+      link: "https://pmc.ncbi.nlm.nih.gov/articles/PMC8000828/",
+    },
+    {
+      citation:
+        "“Integrating Artificial Intelligence into the Modernization of Traditional Chinese Medicine Industry.” Frontiers in Pharmacology, www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2024.1181183/full.",
+      link: "https://www.frontiersin.org/journals/pharmacology/articles/10.3389/fphar.2024.1181183/full",
+    },
+    {
+      citation: "“Huangdi Neijing.” Wikipedia, en.wikipedia.org/wiki/Huangdi_Neijing.",
+      link: "https://en.wikipedia.org/wiki/Huangdi_Neijing",
+    },
+    {
+      citation:
+        "“The Nan Jing or Classic of Difficulties.” Me and Qi, www.meandqi.com/journal/the-nan-jing-or-classic-of-difficulties.",
+      link: "https://www.meandqi.com/journal/the-nan-jing-or-classic-of-difficulties",
+    },
+    {
+      citation: "“Shanghan Lun.” Wikipedia, en.wikipedia.org/wiki/Shanghan_Lun.",
+      link: "https://en.wikipedia.org/wiki/Shanghan_Lun",
+    },
+    {
+      citation: "“Shennong Bencaojing.” Wikipedia, en.wikipedia.org/wiki/Shennong_Bencaojing.",
+      link: "https://en.wikipedia.org/wiki/Shennong_Bencaojing",
+    },
+    {
+      citation:
+        "“Shen Nong Bencaojing 神農本草經.” ChinaKnowledge, www.chinaknowledge.de/Literature/Science/shennongbencaojing.html.",
+      link: "http://www.chinaknowledge.de/Literature/Science/shennongbencaojing.html",
+    },
+  ];
+
   return (
     <MKBox component="section" py={{ xs: 6, sm: 12 }}>
       <Container>
@@ -79,6 +124,7 @@ function Profile() {
                   fontWeight="light"
                   color="info"
                   mt={3}
+                  mb={8}
                   sx={{
                     width: "max-content",
                     display: "flex",
@@ -97,6 +143,29 @@ function Profile() {
                   More about me <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
                 </MKTypography>
               </MKTypography>
+
+              <MKBox display="flex" flexDirection="column">
+                <MKTypography variant="h5" mb={2}>
+                  References
+                </MKTypography>
+                {references.map((ref, index) => (
+                  <MKBox key={index} mb={2}>
+                    <MKTypography variant="body2" color="text" mb={1}>
+                      {ref.citation}
+                    </MKTypography>
+                    <MKTypography
+                      component="a"
+                      href={ref.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      variant="body2"
+                      color="info"
+                    >
+                      {ref.link}
+                    </MKTypography>
+                  </MKBox>
+                ))}
+              </MKBox>
             </Grid>
           </Grid>
         </Grid>

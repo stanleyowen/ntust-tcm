@@ -51,6 +51,7 @@ function Author() {
         >
           <Profile />
         </Card>
+
         <Contact />
         <Footer />
       </MKBox>
