@@ -82,7 +82,7 @@ function Navbars() {
             <MKBox
               component="img"
               src="https://m.media-amazon.com/images/I/51KSpFaI2mL._SY445_SX342_PQ46_.jpg"
-              alt="Shennong`s Materia Medica"
+              alt="Shennong's Materia Medica"
               borderRadius="lg"
               width="25%"
               mb={3}
@@ -304,7 +304,7 @@ function Navbars() {
               >
                 <Container>
                   <MKTypography variant="h2" color="white" mb={1}>
-                    Shennong`s Materia Medica
+                    Shennong's Materia Medica
                   </MKTypography>
                   <MKTypography variant="body1" color="white" opacity={0.8} mb={2}>
                     A traditional Chinese medicine practice that involves inserting thin needles

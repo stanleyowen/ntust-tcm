@@ -162,7 +162,7 @@ const routes = [
             component: <FebrileDisease />,
           },
           {
-            name: "Shennong`s Materia Medica",
+            name: "Shennong's Materia Medica",
             route: "/sections/classics/shennongs-materia-medica",
             component: <MateriaMedica />,
           },

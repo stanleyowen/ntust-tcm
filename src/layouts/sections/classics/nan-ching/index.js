@@ -63,7 +63,7 @@ function Navbars() {
             <MKBox
               component="img"
               src="https://m.media-amazon.com/images/I/51KSpFaI2mL._SY445_SX342_PQ46_.jpg"
-              alt="Shennong`s Materia Medica"
+              alt="Shennong's Materia Medica"
               borderRadius="lg"
               width="25%"
               sx={{ objectFit: "cover", maxHeight: "450px" }}
