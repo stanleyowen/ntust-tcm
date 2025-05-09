@@ -37,7 +37,7 @@ function RelatedBlogs() {
 
       <Container>
         <Grid container spacing={3}>
-          <Grid item md={12} lg={6}>
+          <Grid item md={12} lg={12}>
             <MKBox
               display="flex"
               alignItems="center"
@@ -127,6 +127,63 @@ function RelatedBlogs() {
                 <MKTypography
                   component={Link}
                   to="/sections/history/acupuncture"
+                  variant="body2"
+                  color="white"
+                  fontWeight="regular"
+                  sx={{
+                    display: "flex",
+                    alignItems: "center",
+
+                    "& .material-icons-round": {
+                      fontSize: "1.125rem",
+                      transform: `translateX(3px)`,
+                      transition: "transform 0.2s cubic-bezier(0.34, 1.61, 0.7, 1.3)",
+                    },
+
+                    "&:hover .material-icons-round, &:focus .material-icons-round": {
+                      transform: `translateX(6px)`,
+                    },
+                  }}
+                >
+                  Read more <Icon sx={{ fontWeight: "bold" }}>arrow_forward</Icon>
+                </MKTypography>
+              </Container>
+            </MKBox>
+          </Grid>
+
+          <Grid item md={12} lg={6}>
+            <MKBox
+              display="flex"
+              alignItems="center"
+              borderRadius="xl"
+              py={6}
+              sx={{
+                backgroundImage: ({
+                  functions: { linearGradient, rgba },
+                  palette: { gradients },
+                }) =>
+                  `${linearGradient(
+                    rgba(gradients.dark.main, 0.8),
+                    rgba(gradients.dark.state, 0.8)
+                  )}, url(${moxibustionImage})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }}
+            >
+              <Container>
+                <MKTypography variant="h4" color="white" fontWeight="bold">
+                  The History of
+                </MKTypography>
+                <MKTypography variant="h1" color="white" mb={1}>
+                  Needle Materials
+                </MKTypography>
+                <MKTypography variant="body1" color="white" opacity={0.8} mb={2}>
+                  From stone—acupuncture and bone—acupuncture to silver and steel—acupuncture
+                  needles tell a 10,000-year story of healing through innovation.
+                </MKTypography>
+                <MKTypography
+                  component={Link}
+                  to="/sections/history/moxibustion"
                   variant="body2"
                   color="white"
                   fontWeight="regular"

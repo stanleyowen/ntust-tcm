@@ -43,11 +43,37 @@ export default {
       ],
     },
     {
+      name: "Medical Books",
+      items: [
+        {
+          name: "Medical Books",
+          route: "/sections/medical-books/medical-books",
+        },
+        {
+          name: "the yellow emperor's inner classic",
+          route: "/sections/medical-books/the-yellow-emperors-inner-classic",
+        },
+        {
+          name: "the classic of nan-ching",
+          route: "/sections/medical-books/the-classic-of-nan-ching",
+        },
+        {
+          name: "treatise on feberile disease caused by cold",
+          route: "/sections/medical-books/treatise-on-feberile-disease-caused-by-cold",
+        },
+        {
+          name: "Shennong's Materia Medica",
+          route: "/sections/medical-books/shennongs-materia-medica",
+        },
+      ],
+    },
+    {
       name: "Classics of TCM",
       items: [
-        { name: "illustrations", route: "https://iradesign.io/" },
-        { name: "bits & snippets", route: "https://www.creative-tim.com/bits" },
-        { name: "affiliate program", route: "https://www.creative-tim.com/affiliates/new" },
+        {
+          name: "Life Life Nourishing in 12 Two-Hour Periods",
+          route: "/sections/navigation/pagination",
+        },
       ],
     },
   ],
