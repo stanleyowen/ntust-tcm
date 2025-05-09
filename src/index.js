@@ -8,7 +8,7 @@ const container = document.getElementById("root");
 // Create a root.
 const root = ReactDOMClient.createRoot(container);
 
-if (process.env.NODE_ENV !== "production") {
+if (process.env.NODE_ENV === "production") {
   // Disable right-click
   document.addEventListener("contextmenu", (event) => event.preventDefault());
 
