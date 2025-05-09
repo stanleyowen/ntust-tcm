@@ -75,6 +75,10 @@ function Navbars() {
               The Yellow Emperor's Inner Classic{" "}
             </MKTypography>
 
+            <MKTypography variant="h5" mb={3}>
+              Introduction
+            </MKTypography>
+
             <MKTypography variant="body2" color="text" sx={{ textAlign: "justify" }} mb={3}>
               The <b>Huangdi Neijing</b>, also known as the <i>Yellow Emperor’s Inner Classic</i>,
               is one of the most important and oldest books in Chinese medicine. It has been a key
