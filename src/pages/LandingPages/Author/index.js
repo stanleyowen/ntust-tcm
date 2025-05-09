@@ -37,16 +37,7 @@ import bgImage from "assets/images/school-profile.jpg";
 function Author() {
   return (
     <>
-      <DefaultNavbar
-        routes={routes}
-        action={{
-          type: "external",
-          label: "free download",
-          color: "info",
-        }}
-        transparent
-        light
-      />
+      <DefaultNavbar routes={routes} transparent light />
       <MKBox bgColor="white">
         <MKBox
           minHeight="25rem"

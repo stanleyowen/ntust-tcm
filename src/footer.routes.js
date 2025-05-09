@@ -1,8 +1,5 @@
 // @mui icons
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import YouTubeIcon from "@mui/icons-material/YouTube";
+import { EmailOutlined, Instagram, GitHub } from "@mui/icons-material";
 
 // Material Kit 2 React components
 import MKTypography from "components/MKTypography";
@@ -14,76 +11,58 @@ const date = new Date().getFullYear();
 
 export default {
   brand: {
-    name: "Material Kit 2",
+    name: "Introduction to Traditional Chinese Medicine",
     image: logoCT,
     route: "/",
   },
   socials: [
     {
-      icon: <FacebookIcon />,
-      link: "https://www.facebook.com/CreativeTim/",
+      icon: <EmailOutlined />,
+      link: "mailto:b11315015@mail.ntust.edu.tw",
     },
     {
-      icon: <TwitterIcon />,
-      link: "https://twitter.com/creativetim",
+      icon: <Instagram />,
+      link: "https://www.instagram.com/stanleyowennn/",
     },
     {
-      icon: <GitHubIcon />,
-      link: "https://github.com/creativetimofficial",
-    },
-    {
-      icon: <YouTubeIcon />,
-      link: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w",
+      icon: <GitHub />,
+      link: "https://github.com/stanleyowen",
     },
   ],
   menus: [
     {
-      name: "company",
+      name: "history",
       items: [
-        { name: "about us", href: "https://www.creative-tim.com/presentation" },
-        { name: "freebies", href: "https://www.creative-tim.com/templates/free" },
-        { name: "premium tools", href: "https://www.creative-tim.com/templates/premium" },
-        { name: "blog", href: "https://www.creative-tim.com/blog" },
+        { name: "history of traditional chinese medicine", route: "/pages/landing-pages/history" },
+        { name: "the origin of moxibustion", route: "/sections/history/moxibustion" },
+        {
+          name: "the discovery of acupuncture",
+          route: "/sections/history/acupuncture",
+        },
+        { name: "History of Needle Material", route: "/sections/history/needles" },
       ],
     },
     {
-      name: "resources",
+      name: "Classics of TCM",
       items: [
-        { name: "illustrations", href: "https://iradesign.io/" },
-        { name: "bits & snippets", href: "https://www.creative-tim.com/bits" },
-        { name: "affiliate program", href: "https://www.creative-tim.com/affiliates/new" },
-      ],
-    },
-    {
-      name: "help & support",
-      items: [
-        { name: "contact us", href: "https://www.creative-tim.com/contact-us" },
-        { name: "knowledge center", href: "https://www.creative-tim.com/knowledge-center" },
-        { name: "custom development", href: "https://services.creative-tim.com/" },
-        { name: "sponsorships", href: "https://www.creative-tim.com/sponsorships" },
-      ],
-    },
-    {
-      name: "legal",
-      items: [
-        { name: "terms & conditions", href: "https://www.creative-tim.com/terms" },
-        { name: "privacy policy", href: "https://www.creative-tim.com/privacy" },
-        { name: "licenses (EULA)", href: "https://www.creative-tim.com/license" },
+        { name: "illustrations", route: "https://iradesign.io/" },
+        { name: "bits & snippets", route: "https://www.creative-tim.com/bits" },
+        { name: "affiliate program", route: "https://www.creative-tim.com/affiliates/new" },
       ],
     },
   ],
   copyright: (
     <MKTypography variant="button" fontWeight="regular">
-      All rights reserved. Copyright &copy; {date} Material Kit by{" "}
+      All rights reserved. Copyright &copy; {date} Traditional Chinese Medicine by{" "}
       <MKTypography
         component="a"
-        href="https://www.creative-tim.com"
+        href="https://github.com/stanleyowen/"
         target="_blank"
         rel="noreferrer"
         variant="button"
         fontWeight="regular"
       >
-        Creative Tim
+        Stanley Owen 張銘元
       </MKTypography>
       .
     </MKTypography>
