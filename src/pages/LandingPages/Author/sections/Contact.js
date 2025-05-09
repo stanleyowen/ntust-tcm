@@ -136,8 +136,7 @@ function Contact() {
                         color="white"
                         size="large"
                         iconOnly
-                        href="
-                        https://www.instagram.com/stanleyowennn/"
+                        href="https://www.instagram.com/stanleyowennn/"
                         target="_blank"
                       >
                         <i className="fab fa-instagram" style={{ fontSize: "1.25rem" }} />

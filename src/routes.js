@@ -80,21 +80,6 @@ const routes = [
           },
         ],
       },
-      {
-        name: "account",
-        collapse: [
-          {
-            name: "sign in",
-            route: "/pages/authentication/sign-in",
-            component: <SignIn />,
-          },
-          {
-            name: "sign up",
-            route: "/pages/authentication/sign-in",
-            component: <SignIn />,
-          },
-        ],
-      },
     ],
   },
   {
@@ -130,27 +115,27 @@ const routes = [
         collapse: [
           {
             name: "Medical Books",
-            route: "/sections/classics/medical-books",
+            route: "/sections/medical-books",
             component: <MedicalBooks />,
           },
           {
             name: "the yellow emperor's inner classic",
-            route: "/sections/classics/the-yellow-emperors-inner-classic",
+            route: "/sections/medical-books/the-yellow-emperors-inner-classic",
             component: <YellowEmperror />,
           },
           {
             name: "the classic of nan-ching",
-            route: "/sections/classics/the-classic-of-nan-ching",
+            route: "/sections/medical-books/the-classic-of-nan-ching",
             component: <NanChing />,
           },
           {
             name: "treatise on feberile disease caused by cold",
-            route: "/sections/classics/treatise-on-feberile-disease-caused-by-cold",
+            route: "/sections/medical-books/treatise-on-feberile-disease-caused-by-cold",
             component: <FebrileDisease />,
           },
           {
             name: "Shennong's Materia Medica",
-            route: "/sections/classics/shennongs-materia-medica",
+            route: "/sections/medical-books/shennongs-materia-medica",
             component: <MateriaMedica />,
           },
         ],
