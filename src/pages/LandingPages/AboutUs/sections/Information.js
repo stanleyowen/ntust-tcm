@@ -9,8 +9,6 @@ import MKTypography from "components/MKTypography";
 // Material Kit 2 React examples
 import DefaultInfoCard from "examples/Cards/InfoCards/DefaultInfoCard";
 
-import AcupuntureImage from "assets/images/acupunture.png";
-
 function Information() {
   return (
     <MKBox component="section" py={12}>
