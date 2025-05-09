@@ -42,21 +42,21 @@ function Information() {
                 icon="touch_app"
                 title={
                   <>
-                    Feel the
+                    Feel the beauty of
                     <br />
-                    Material Kit
+                    Traditional Chinese Medicine
                   </>
                 }
-                description="All the MUI components that you need in a development have been re-design with the new look."
+                description="Explore the rich history and profound knowledge of Traditional Chinese Medicine."
               />
               <RotatingCardBack
                 image={bgBack}
                 title="Discover More"
-                description="You will save a lot of time going from prototyping to full-functional code because all elements are implemented."
+                description="Dive deeper into the world of Traditional Chinese Medicine and uncover its secrets."
                 action={{
                   type: "internal",
-                  route: "/sections/page-sections/page-headers",
-                  label: "start with header",
+                  route: "/pages/landing-pages/history",
+                  label: "start exploring",
                 }}
               />
             </RotatingCard>
@@ -65,33 +65,32 @@ function Information() {
             <Grid container spacing={3}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="content_copy"
-                  title="Full Documentation"
-                  description="Built by developers for developers. Check the foundation and you will find
-                    everything inside our documentation."
+                  icon="history_edu"
+                  title="Ancient Wisdom"
+                  description="With over 3,000 years of history, TCM is rooted in ancient practices and knowledge passed down through generations."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="flip_to_front"
-                  title="MUI Ready"
-                  description="The world's most popular react components library for building user interfaces."
+                  icon="spa"
+                  title="Natural Remedies"
+                  description="TCM utilizes natural herbs, acupuncture, and other techniques to promote healing without relying on synthetic drugs."
                 />
               </Grid>
             </Grid>
             <Grid container spacing={3} sx={{ mt: { xs: 0, md: 6 } }}>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="price_change"
-                  title="Save Time & Money"
-                  description="Creating your design from scratch with dedicated designers can be very expensive. Start with our Design System."
+                  icon="shield"
+                  title="Preventive Care"
+                  description="TCM emphasizes prevention by maintaining balance and harmony in the body to avoid illnesses before they occur."
                 />
               </Grid>
               <Grid item xs={12} md={6}>
                 <DefaultInfoCard
-                  icon="devices"
-                  title="Fully Responsive"
-                  description="Regardless of the screen size, the website content will naturally fit the given resolution."
+                  icon="healing"
+                  title="Holistic Healing"
+                  description="Traditional Chinese Medicine focuses on treating the root cause of illnesses by restoring balance and harmony in the body."
                 />
               </Grid>
             </Grid>
