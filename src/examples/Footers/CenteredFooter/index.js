@@ -21,8 +21,15 @@ function CenteredFooter({ company, links, socials, light }) {
   const renderLinks = links.map((link) => (
     <MKTypography
       key={link.name}
-      component={Link}
-      to={link.href}
+      component={
+        link.href
+          ? "a" // External link
+          : require("react-router-dom").Link // Internal link using React Router
+      }
+      href={link.href || undefined} // Use href for external links
+      to={link.to || undefined} // Use to for internal links
+      target={link.href ? "_blank" : undefined} // Open external links in a new tab
+      rel={link.href ? "noreferrer" : undefined} // Add security for external links
       variant="body2"
       color={light ? "white" : "secondary"}
       fontWeight="regular"
@@ -89,7 +96,11 @@ function CenteredFooter({ company, links, socials, light }) {
 // Setting default values for the props of CenteredFooter
 CenteredFooter.defaultProps = {
   company: { href: "https://www.creative-tim.com/", name: "Creative Tim" },
-  links: [{ name: "History", href: "/pages/landing-pages/history" }],
+  links: [
+    { name: "Home", to: "/" },
+    { name: "History", to: "/pages/landing-pages/history" },
+    { name: "Medical Books", to: "/sections/medical-books" },
+  ],
   socials: [
     { icon: <Email fontSize="small" />, link: "mailto:b11315015@mail.ntust.edu.tw" },
     {
