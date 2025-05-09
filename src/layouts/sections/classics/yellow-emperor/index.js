@@ -36,19 +36,12 @@ function Navbars() {
       <MKBox component="section">
         <Grid container>
           <Grid item>
-            <MKTypography variant="h3" mt={6} mb={3}>
-              Traditional Chinese Medicine Medical Books
-            </MKTypography>
-          </Grid>
-
-          <Grid item>
             <MKBox
               component="img"
               src="https://m.media-amazon.com/images/I/81AKWccxFoL.jpg"
               alt="The Yellow Emperor's Inner Classic"
               borderRadius="lg"
               width="25%"
-              mb={3}
               sx={{ objectFit: "cover", maxHeight: "450px" }}
             />
             <MKBox
@@ -57,7 +50,6 @@ function Navbars() {
               alt="The Classic of Nan-Ching"
               borderRadius="lg"
               width="25%"
-              mb={3}
               sx={{ objectFit: "cover", maxHeight: "450px" }}
             />
             <MKBox
@@ -66,7 +58,6 @@ function Navbars() {
               alt="Treatise on feberile disease caused by Cold"
               borderRadius="lg"
               width="25%"
-              mb={3}
               sx={{ objectFit: "cover", maxHeight: "450px" }}
             />
             <MKBox
@@ -75,13 +66,12 @@ function Navbars() {
               alt="Shennong`s Materia Medica"
               borderRadius="lg"
               width="25%"
-              mb={3}
               sx={{ objectFit: "cover", maxHeight: "450px" }}
             />
           </Grid>
 
           <Grid item>
-            <MKTypography variant="h3" mt={6} mb={3}>
+            <MKTypography variant="h3" mt={3} mb={3}>
               The Yellow Emperor's Inner Classic{" "}
             </MKTypography>
 
@@ -112,95 +102,49 @@ function Navbars() {
                 </ul>
               </Container>
             </MKTypography>
+          </Grid>
 
-            <MKTypography variant="h5" mt={6} mb={3}>
-              The Yellow Emperor's Inner Classic{" "}
+          <Grid item>
+            <MKTypography variant="h5" mb={3}>
+              Background
+            </MKTypography>
+            <MKTypography variant="body2" color="text" sx={{ textAlign: "justify" }} mb={3}>
+              The book was first mentioned around the year 111 CE. A scholar named Huangfu Mi
+              (around 215-282 CE) said the Neijing actually included two books: the Suwen and
+              another one called the Zhenjing, which is likely an older name for the Lingshu.
             </MKTypography>
           </Grid>
 
-          <MKBox
-            component="img"
-            src="https://media.allure.com/photos/5e909f76e3986e0008731c3b/16:9/w_2240,c_limit/acupuncture.jpg"
-            alt="Traditional Chinese Medicine"
-            borderRadius="lg"
-            width="60%"
-            mb={3}
-            sx={{ maxHeight: "800px", objectFit: "cover", mx: "auto", display: "block" }}
-          />
-
-          <MKTypography variant="body2" color="text" sx={{ textAlign: "justify" }} mb={3}>
-            The Chinese character for "needle" (針) reflects this history, combining the concepts of
-            sharpness and precision. Similarly, the character for "Bain Stone" (砭) represents the
-            early use of stones for medical purposes. These discoveries highlight the ingenuity of
-            ancient humans, who developed techniques to stimulate specific points on the body to
-            restore balance and harmony.
-          </MKTypography>
-
-          <MKTypography variant="body2" color="text" sx={{ textAlign: "justify" }} mb={3}>
-            As technology advanced, the tools used in acupuncture evolved. The stone needles were
-            replaced with bamboo and later with metals, allowing for greater precision and
-            effectiveness. Today, acupuncture is practiced in various styles, including Japanese
-            acupuncture, Korean hand acupuncture, Leamington Five-Elements acupuncture, French
-            energetic acupuncture, and the traditional Chinese TCM style. Specialized approaches,
-            such as hand–foot acupuncture, auricular acupuncture, and scalp acupuncture, have also
-            emerged.
-          </MKTypography>
-
-          <MKTypography variant="body2" color="text" sx={{ textAlign: "justify" }} mb={3}>
-            While the use of metal needles and moxibustion remains the most common technical
-            approach, modern innovations have introduced electricity and lasers as alternatives to
-            handheld needles in certain circumstances. Despite these advancements, acupuncture
-            remains deeply rooted in its historical origins, continuing to honor the practices and
-            discoveries of ancient humans.
-          </MKTypography>
+          <Grid item>
+            <MKTypography variant="h5" mb={3}>
+              Main Ideas
+            </MKTypography>
+            <MKTypography variant="body2" color="text" sx={{ textAlign: "justify" }} mb={3}>
+              <Container>
+                <ul>
+                  <li>
+                    It replaced older beliefs that illness came from evil spirits. Instead, it
+                    explained disease as a result of imbalances in things like diet, emotions,
+                    lifestyle, or the environment.
+                  </li>
+                  <li>
+                    The Neijing uses symbols and patterns (like yin and yang, the five elements, and
+                    qi) to explain how the body works, just like we use letters and numbers in
+                    science and math.
+                  </li>
+                  <li>
+                    It teaches that humans are like a small version of the universe—what happens in
+                    nature also affects our bodies.
+                  </li>
+                  <li>
+                    Good health comes from keeping everything in balance—inside us and with the
+                    world around us.
+                  </li>
+                </ul>
+              </Container>
+            </MKTypography>
+          </Grid>
         </Grid>
-
-        <MKBox
-          component="section"
-          variant="gradient"
-          bgColor="dark"
-          position="relative"
-          py={6}
-          px={{ xs: 2, lg: 0 }}
-          mx={-2}
-        >
-          <Container>
-            <Grid container>
-              <MKTypography variant="h3" color="white">
-                From Stone to Silicon: The Evolution of Acupuncture
-              </MKTypography>
-
-              <MKBox
-                component="img"
-                src="https://www.jrheum.org/content/jrheum/48/6/924/F2.large.jpg"
-                alt="Traditional Chinese Medicine"
-                borderRadius="lg"
-                width="100%"
-                mb={3}
-                mt={3}
-                sx={{ maxHeight: "400px", objectFit: "cover" }}
-              />
-
-              <MKTypography variant="body2" color="white" opacity={0.8} mt={3} textAlign="justify">
-                Just as ancient humans used sharp stones to relieve pain and promote healing, modern
-                science and technology have introduced new ways to understand and apply acupuncture.
-                Today, researchers use neuroimaging technologies like fMRI and PET scans to study
-                how acupuncture affects the brain and nervous system. These tools provide evidence
-                for acupuncture’s effects on pain pathways, emotion regulation, and organ function.
-                In addition, artificial intelligence (AI) is being used to analyze vast databases of
-                acupuncture cases and outcomes, helping to identify the most effective point
-                combinations for specific conditions. Robotic acupuncture systems, guided by AI and
-                real-time imaging, are also being developed to deliver precise needle placement with
-                minimal discomfort. Furthermore, electroacupuncture and laser acupuncture offer
-                needle-free alternatives that simulate traditional acupuncture using electrical or
-                light energy—making treatments more accessible, especially for needle-sensitive
-                patients. Just as early humans used the tools they had to explore healing, we now
-                use technology to refine, validate, and expand these ancient practices for a modern
-                world.
-              </MKTypography>
-            </Grid>
-          </Container>
-        </MKBox>
       </MKBox>
     </BaseLayout>
   );

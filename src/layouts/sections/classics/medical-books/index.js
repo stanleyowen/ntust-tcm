@@ -151,7 +151,7 @@ function Navbars() {
                   </MKTypography>
                   <MKTypography
                     component={Link}
-                    to="/sections/history/moxibustion"
+                    to="/sections/classics/the-yellow-emperors-inner-classic"
                     variant="body2"
                     color="white"
                     fontWeight="regular"
@@ -205,7 +205,7 @@ function Navbars() {
                   </MKTypography>
                   <MKTypography
                     component={Link}
-                    to="/sections/history/acupuncture"
+                    to="/sections/classics/the-classic-of-nan-ching"
                     variant="body2"
                     color="white"
                     fontWeight="regular"
@@ -259,7 +259,7 @@ function Navbars() {
                   </MKTypography>
                   <MKTypography
                     component={Link}
-                    to="/sections/history/acupuncture"
+                    to="/sections/classics/treatise-on-feberile-disease-caused-by-cold"
                     variant="body2"
                     color="white"
                     fontWeight="regular"
@@ -313,7 +313,7 @@ function Navbars() {
                   </MKTypography>
                   <MKTypography
                     component={Link}
-                    to="/sections/history/acupuncture"
+                    to="/sections/classics/shennongs-materia-medica"
                     variant="body2"
                     color="white"
                     fontWeight="regular"
