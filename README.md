@@ -50,3 +50,23 @@ To run this project locally, follow these steps:
    git clone https://github.com/stanleyowen/ntust-tcm.git
    cd ntust-tcm
    ```
+
+---
+
+## Project Structure
+
+```plaintext
+src/
+├── assets/                # Images and static assets
+├── components/            # Reusable React components
+├── layouts/               # Page layouts and sections
+│   ├── sections/          # Specific sections like medical books, history, etc.
+│   └── components/        # Shared layout components
+├── pages/                 # Main pages of the application
+│   ├── LandingPages/      # Pages like History, Author, etc.
+│   └── Presentation/      # Presentation-related sections
+├── routes.js              # Application routes
+├── index.js               # Entry point
+├── App.js                 # Main application component
+└── README.md              # Project documentation
+```

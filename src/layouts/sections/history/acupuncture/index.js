@@ -104,18 +104,18 @@ function Features() {
           <Container>
             <Grid container>
               <MKTypography variant="h3" color="white">
-                From Stone to Silicon: The Evolution of Acupuncture
+                The Legacy of Acupuncture: From Primitive Tools to Advanced Therapies
               </MKTypography>
 
               <MKBox
                 component="img"
-                src="https://www.jrheum.org/content/jrheum/48/6/924/F2.large.jpg"
+                src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41598-017-18870-1/MediaObjects/41598_2017_18870_Fig5_HTML.jpg"
                 alt="Traditional Chinese Medicine"
                 borderRadius="lg"
                 width="100%"
                 mb={3}
                 mt={3}
-                sx={{ maxHeight: "400px", objectFit: "cover" }}
+                sx={{ objectFit: "cover" }}
               />
 
               <MKTypography variant="body2" color="white" opacity={0.8} mt={3} textAlign="justify">
